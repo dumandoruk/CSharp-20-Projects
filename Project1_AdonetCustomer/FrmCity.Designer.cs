@@ -57,7 +57,6 @@
             // 
             this.txtCityId.Location = new System.Drawing.Point(169, 51);
             this.txtCityId.Name = "txtCityId";
-            this.txtCityId.ReadOnly = true;
             this.txtCityId.Size = new System.Drawing.Size(194, 26);
             this.txtCityId.TabIndex = 1;
             // 
@@ -79,6 +78,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(532, 299);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // label2
             // 
@@ -104,6 +104,7 @@
             this.txtCityName.Name = "txtCityName";
             this.txtCityName.Size = new System.Drawing.Size(194, 26);
             this.txtCityName.TabIndex = 7;
+            this.txtCityName.TextChanged += new System.EventHandler(this.txtCityName_TextChanged);
             // 
             // txtCountry
             // 
@@ -111,6 +112,7 @@
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(194, 26);
             this.txtCountry.TabIndex = 8;
+            this.txtCountry.TextChanged += new System.EventHandler(this.txtCountry_TextChanged);
             // 
             // btnDelete
             // 

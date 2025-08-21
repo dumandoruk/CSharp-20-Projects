@@ -32,12 +32,28 @@ namespace Project1_AdonetCustomer
                     dataGridView1.DataSource = dt;
                 }
             }
+            dataGridView1.ClearSelection();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            txtCityName.Enabled = true;
+            txtCountry.Enabled = true;
+
+            txtCityId.ReadOnly = true;
+            txtCityId.BackColor = SystemColors.Window;
+            txtCityId.ForeColor = SystemColors.WindowText;
+            txtCityId.TabStop = false;
+
+            btnAdd.Enabled = true;
+            btnSearch.Enabled = true;
+
+            btnClear.Enabled = false;
+            btnDelete.Enabled = false;
+            btnUpdate.Enabled = false;
+
             ListDatas();
         }
-
+        
         private void btnAdd_Click(object sender, EventArgs e)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -109,6 +125,7 @@ namespace Project1_AdonetCustomer
 
         }
 
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) // başlık kısmı değilse
@@ -175,6 +192,21 @@ namespace Project1_AdonetCustomer
             txtCityName.Text = "";
             txtCountry.Text = "";
             txtCityName.Focus();
+        }
+
+        private void txtCityName_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtCountry_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
