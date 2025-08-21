@@ -17,7 +17,7 @@ namespace Project1_AdonetCustomer
         {
             InitializeComponent();
         }
-        string connectionString="Data Source=KASISKI;Initial Catalog=DbCustomer;Integrated Security=True; Encrypt=False";
+        string connectionString = "Data Source=KASISKI;Initial Catalog=DbCustomer;Integrated Security=True; Encrypt=False";
 
         private void ListDatas()
         {
@@ -59,20 +59,54 @@ namespace Project1_AdonetCustomer
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            if (dataGridView1.CurrentRow == null)
             {
-                connection.Open();
-                string query = "DELETE FROM TblCity WHERE CityId = @CityId";
-
-                using(SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@CityId", dataGridView1.CurrentRow.Cells[0].Value);
-                    command.ExecuteNonQuery();
-                }
+                MessageBox.Show("Please select a row to delete.");
+                return;
             }
-            ListDatas();
-            txtCityName.Text = "";
-            txtCountry.Text = "";
+            if (!int.TryParse(dataGridView1.CurrentRow.Cells[0].Value.ToString(), out int cityId))
+            {
+                MessageBox.Show("Invalid City Id.");
+                return;
+            }
+            var ask = MessageBox.Show(
+            $"Are you sure you want to delete City #{cityId}?",
+            "Confirm Delete",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+            );
+            if (ask != DialogResult.Yes)
+            {
+                return;
+            }
+
+            try
+            {
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand("DELETE FROM TblCity WHERE CityId= @CityId", connection))
+                {
+                    command.Parameters.AddWithValue("@CityId", cityId);
+
+                    connection.Open();
+                    int affected = command.ExecuteNonQuery();
+                    if (affected > 0)
+                        MessageBox.Show("City deleted successfully.");
+                    else
+                        MessageBox.Show("City not found or already deleted.");
+
+                }
+                ListDatas();
+                dataGridView1.ClearSelection();
+                txtCityName.Text = "";
+                txtCountry.Text = "";
+                txtCityName.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unexpected error: " + ex.Message);
+            }
+
+
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -90,12 +124,12 @@ namespace Project1_AdonetCustomer
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            using(SqlConnection connection= new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 string query = "UPDATE TblCity set CityName=@CityName, CityCountry=@CityCountry where CityId=@CityId";
 
-                using(SqlCommand comman = new SqlCommand(query, connection))
+                using (SqlCommand comman = new SqlCommand(query, connection))
                 {
                     comman.Parameters.AddWithValue("@CityId", txtCityId.Text);
                     comman.Parameters.AddWithValue("@CityName", txtCityName.Text);
