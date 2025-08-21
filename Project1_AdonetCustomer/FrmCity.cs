@@ -134,5 +134,13 @@ namespace Project1_AdonetCustomer
             this.Close();
             Application.OpenForms["FrmMap"].Show();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtCityId.Text = "";
+            txtCityName.Text = "";
+            txtCountry.Text = "";
+            txtCityName.Focus();
+        }
     }
 }
