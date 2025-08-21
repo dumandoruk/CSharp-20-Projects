@@ -24,7 +24,6 @@ namespace Project1_AdonetCustomer
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT * FROM TblCity";
-
                 using (SqlDataAdapter da = new SqlDataAdapter(query, connection))
                 {
                     DataTable dt = new DataTable();
@@ -33,25 +32,19 @@ namespace Project1_AdonetCustomer
                 }
             }
             dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null; // sahte seçimleri temizle
+            ApplyButtonState();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtCityName.Enabled = true;
-            txtCountry.Enabled = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
 
-            txtCityId.ReadOnly = true;
-            txtCityId.BackColor = SystemColors.Window;
-            txtCityId.ForeColor = SystemColors.WindowText;
-            txtCityId.TabStop = false;
-
-            btnAdd.Enabled = true;
-            btnSearch.Enabled = true;
-
-            btnClear.Enabled = false;
-            btnDelete.Enabled = false;
-            btnUpdate.Enabled = false;
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
 
             ListDatas();
+            ApplyButtonState();   // ← 
         }
         
         private void btnAdd_Click(object sender, EventArgs e)
@@ -71,6 +64,7 @@ namespace Project1_AdonetCustomer
             ListDatas();
             txtCityName.Text = "";
             txtCountry.Text = "";
+            ApplyButtonState();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -116,6 +110,7 @@ namespace Project1_AdonetCustomer
                 txtCityName.Text = "";
                 txtCountry.Text = "";
                 txtCityName.Focus();
+                ApplyButtonState();
             }
             catch (Exception ex)
             {
@@ -125,17 +120,43 @@ namespace Project1_AdonetCustomer
 
         }
 
+        private void ApplyButtonState()
+        {
+            bool selected = dataGridView1.CurrentRow != null;
+            bool hasFields = !string.IsNullOrWhiteSpace(txtCityName.Text)
+                          || !string.IsNullOrWhiteSpace(txtCountry.Text);
 
+            // Search her zaman açık
+            btnSearch.Enabled = true;
+
+            if (selected)
+            {
+                // Seçimdeyken: Add kapalı, diğerleri açık
+                btnAdd.Enabled = false;
+                btnUpdate.Enabled = true;
+                btnDelete.Enabled = true;
+                btnClear.Enabled = true;
+            }
+            else
+            {
+                // Seçim yokken: Add açık, Update/Delete kapalı
+                btnAdd.Enabled = true;
+                btnUpdate.Enabled = false;
+                btnDelete.Enabled = false;
+                btnClear.Enabled = hasFields; // alanlarda yazı varsa Clear aç
+            }
+        }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // başlık kısmı değilse
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-
                 txtCityId.Text = row.Cells["CityId"].Value.ToString();
                 txtCityName.Text = row.Cells["CityName"].Value.ToString();
                 txtCountry.Text = row.Cells["CityCountry"].Value.ToString();
             }
+
+            ApplyButtonState(); // ← bunu bırak, alttaki el ile setleri SİL
 
         }
 
@@ -158,6 +179,7 @@ namespace Project1_AdonetCustomer
             ListDatas();
             txtCityName.Text = "";
             txtCountry.Text = "";
+            ApplyButtonState();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -188,25 +210,34 @@ namespace Project1_AdonetCustomer
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtCityId.Text = "";
-            txtCityName.Text = "";
-            txtCountry.Text = "";
-            txtCityName.Focus();
-        }
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
 
+            txtCityId.Text = ""; txtCityName.Text = ""; txtCountry.Text = "";
+            txtCityName.Focus();
+
+            ApplyButtonState(); // ← ekle
+        }
+        
         private void txtCityName_TextChanged(object sender, EventArgs e)
         {
-            
         }
 
         private void txtCountry_TextChanged(object sender, EventArgs e)
         {
-            
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            
+           
         }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
+        }
+
+
     }
 }
