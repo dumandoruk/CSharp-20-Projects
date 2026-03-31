@@ -12,6 +12,12 @@ My goal is not only to recreate the course projects but also to improve and exte
   - Add, list, delete products
   -  Delete product by selecting a row from DataGridView (instead of typing ID manually)
   -  Added try–catch blocks for error handling
+ 
+-  **Project 3: Entity Framework DB-First Statistics Dashboard
+  -  This project is a Windows Forms application designed to demonstrate data analysis and reporting capabilities using Entity Framework (Database First). It features a comprehensive dashboard that visualizes various e-commerce metrics and hierarchical data structures.
+  -  <img width="796" height="600" alt="image" src="https://github.com/user-attachments/assets/6d392372-22b1-4722-b321-232853dc7575" />
+  
+
 
 *(The list will be updated as I progress with new projects.)*
 
