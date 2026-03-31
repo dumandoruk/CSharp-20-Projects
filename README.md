@@ -1,24 +1,31 @@
-# CSharp-20-Projects
+C# 20 Projects - Learning Journey
+This repository contains 20 real-world projects developed to master C#, SQL, and Entity Framework.
 
-This repository contains the projects I built while following the Udemy course "C# ile 20 Derste 20 Uygulamalı Proje" - (20 Practical Projects in 20 Lessons with C#) by Murat Yücedağ
-My goal is not only to recreate the course projects but also to improve and extend them with real-world features.
+Project List
+Project 1: ADO.NET Customer Management
+Focus: Direct database connection using ADO.NET.
 
----
+Features: Full CRUD (Create, Read, Update, Delete) operations for customer data.
 
-## Project List
-- **Project 1: ADO.NET Customer Management**
-  - Add, list, update, delete customers
-- **Project 2: Entity Framework (DbFirst) Product Management**
-  - Add, list, delete products
-  -  Delete product by selecting a row from DataGridView (instead of typing ID manually)
-  -  Added try–catch blocks for error handling
- 
--  **Project 3: Entity Framework DB-First Statistics Dashboard
-  -  This project is a Windows Forms application designed to demonstrate data analysis and reporting capabilities using Entity Framework (Database First). It features a comprehensive dashboard that visualizes various e-commerce metrics and hierarchical data structures.
-  -  <img width="796" height="600" alt="image" src="https://github.com/user-attachments/assets/6d392372-22b1-4722-b321-232853dc7575" />
-  
+Project 2: Entity Framework (DbFirst) Product Management
+Focus: Introduction to ORM with Entity Framework.
 
+Features: * Dynamic listing and product management.
 
+Advanced UI: Delete products directly from DataGridView selection.
+
+Reliability: Integrated try-catch blocks for robust error handling.
+
+Project 3: EF Statistics Dashboard
+Focus: Data analysis and Business Intelligence (BI) visualization.
+
+Features:
+
+Real-time e-commerce metrics dashboard.
+
+Advanced DB Design: Self-referencing (Recursive) category structure for infinite sub-nesting.
+
+LINQ mastery: Complex queries for financial and inventory statistics.
 *(The list will be updated as I progress with new projects.)*
 
 ---
