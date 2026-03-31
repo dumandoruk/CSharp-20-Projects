@@ -1,17 +1,21 @@
-# CSharp-20-Projects
+### Project 1: ADO.NET Customer Management
+* **Focus:** Direct database connection using ADO.NET.
+* **Features:** Full CRUD (Create, Read, Update, Delete) operations for customer data.
 
-This repository contains the projects I built while following the Udemy course "C# ile 20 Derste 20 Uygulamalı Proje" - (20 Practical Projects in 20 Lessons with C#) by Murat Yücedağ
-My goal is not only to recreate the course projects but also to improve and extend them with real-world features.
+### Project 2: Entity Framework (DbFirst) Product Management
+* **Focus:** Introduction to ORM with Entity Framework.
+* **Features:** * Dynamic listing and product management.
+  * **Advanced UI:** Delete products directly from DataGridView selection.
+  * **Reliability:** Integrated `try-catch` blocks for error handling.
 
----
-
-## Project List
-- **Project 1: ADO.NET Customer Management**
-  - Add, list, update, delete customers
-- **Project 2: Entity Framework (DbFirst) Product Management**
-  - Add, list, delete products
-  -  Delete product by selecting a row from DataGridView (instead of typing ID manually)
-  -  Added try–catch blocks for error handling
+### Project 3: EF Statistics Dashboard
+* **Focus:** Data analysis and Business Intelligence (BI) visualization.
+* **Features:**
+  * Real-time e-commerce metrics dashboard.
+  * **Advanced DB Design:** Self-referencing (Recursive) category structure.
+  * **LINQ Mastery:** Complex queries for financial and inventory statistics.
+* **Preview:**
+![Dashboard Preview](https://github.com/user-attachments/assets/6d392372-22b1-4722-b321-232853dc7575)
 
 *(The list will be updated as I progress with new projects.)*
 
