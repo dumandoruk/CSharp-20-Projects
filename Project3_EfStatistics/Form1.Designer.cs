@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblCategoryCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblProductCount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.lblAvgOrderPrice = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lblTotalRevenue = new System.Windows.Forms.Label();
+            this.lblTotalStock = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblCategoryWithMostProducts = new System.Windows.Forms.Label();
@@ -65,10 +65,10 @@
             this.lblMostExpensiveProduct = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.lblOrderCountLastMonth = new System.Windows.Forms.Label();
+            this.lblLightingCategoryProducts = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.lblCustomerCountLastMonth = new System.Windows.Forms.Label();
+            this.lblProductWithMostStock = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.lblActiveCityCount = new System.Windows.Forms.Label();
@@ -76,18 +76,6 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.lblTopCustomer = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.lblCompletedOrderCount = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.lblActiveCustomerCount = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.lblTotalProductStock = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.lblTotalSalesQuantity = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -104,10 +92,6 @@
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -120,17 +104,6 @@
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(48, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Kategori Sayısı";
-//            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // lblCategoryCount
             // 
             this.lblCategoryCount.AutoSize = true;
@@ -140,7 +113,16 @@
             this.lblCategoryCount.Size = new System.Drawing.Size(20, 24);
             this.lblCategoryCount.TabIndex = 3;
             this.lblCategoryCount.Text = "0";
-//            this.lblCategoryCount.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(48, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Kategori Sayısı";
             // 
             // panel2
             // 
@@ -321,22 +303,22 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.lblTotalRevenue);
+            this.panel8.Controls.Add(this.lblTotalStock);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Location = new System.Drawing.Point(12, 118);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 100);
             this.panel8.TabIndex = 5;
             // 
-            // lblTotalRevenue
+            // lblTotalStock
             // 
-            this.lblTotalRevenue.AutoSize = true;
-            this.lblTotalRevenue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTotalRevenue.Location = new System.Drawing.Point(65, 58);
-            this.lblTotalRevenue.Name = "lblTotalRevenue";
-            this.lblTotalRevenue.Size = new System.Drawing.Size(20, 24);
-            this.lblTotalRevenue.TabIndex = 3;
-            this.lblTotalRevenue.Text = "0";
+            this.lblTotalStock.AutoSize = true;
+            this.lblTotalStock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTotalStock.Location = new System.Drawing.Point(65, 58);
+            this.lblTotalStock.Name = "lblTotalStock";
+            this.lblTotalStock.Size = new System.Drawing.Size(20, 24);
+            this.lblTotalStock.TabIndex = 3;
+            this.lblTotalStock.Text = "0";
             // 
             // label16
             // 
@@ -344,9 +326,9 @@
             this.label16.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label16.Location = new System.Drawing.Point(61, 17);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 16);
+            this.label16.Size = new System.Drawing.Size(119, 16);
             this.label16.TabIndex = 2;
-            this.label16.Text = "Toplam Ciro";
+            this.label16.Text = "Toplam Stok Sayısı";
             // 
             // panel9
             // 
@@ -361,7 +343,7 @@
             // 
             this.lblCategoryWithMostProducts.AutoSize = true;
             this.lblCategoryWithMostProducts.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCategoryWithMostProducts.Location = new System.Drawing.Point(65, 58);
+            this.lblCategoryWithMostProducts.Location = new System.Drawing.Point(3, 58);
             this.lblCategoryWithMostProducts.Name = "lblCategoryWithMostProducts";
             this.lblCategoryWithMostProducts.Size = new System.Drawing.Size(20, 24);
             this.lblCategoryWithMostProducts.TabIndex = 3;
@@ -420,7 +402,7 @@
             // 
             this.lblCheapestProduct.AutoSize = true;
             this.lblCheapestProduct.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCheapestProduct.Location = new System.Drawing.Point(65, 58);
+            this.lblCheapestProduct.Location = new System.Drawing.Point(3, 58);
             this.lblCheapestProduct.Name = "lblCheapestProduct";
             this.lblCheapestProduct.Size = new System.Drawing.Size(20, 24);
             this.lblCheapestProduct.TabIndex = 3;
@@ -450,7 +432,7 @@
             // 
             this.lblMostExpensiveProduct.AutoSize = true;
             this.lblMostExpensiveProduct.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMostExpensiveProduct.Location = new System.Drawing.Point(65, 58);
+            this.lblMostExpensiveProduct.Location = new System.Drawing.Point(3, 58);
             this.lblMostExpensiveProduct.Name = "lblMostExpensiveProduct";
             this.lblMostExpensiveProduct.Size = new System.Drawing.Size(20, 24);
             this.lblMostExpensiveProduct.TabIndex = 3;
@@ -469,52 +451,52 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel13.Controls.Add(this.lblOrderCountLastMonth);
+            this.panel13.Controls.Add(this.lblLightingCategoryProducts);
             this.panel13.Controls.Add(this.label26);
             this.panel13.Location = new System.Drawing.Point(630, 330);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(200, 100);
             this.panel13.TabIndex = 10;
             // 
-            // lblOrderCountLastMonth
+            // lblLightingCategoryProducts
             // 
-            this.lblOrderCountLastMonth.AutoSize = true;
-            this.lblOrderCountLastMonth.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblOrderCountLastMonth.Location = new System.Drawing.Point(65, 58);
-            this.lblOrderCountLastMonth.Name = "lblOrderCountLastMonth";
-            this.lblOrderCountLastMonth.Size = new System.Drawing.Size(20, 24);
-            this.lblOrderCountLastMonth.TabIndex = 3;
-            this.lblOrderCountLastMonth.Text = "0";
+            this.lblLightingCategoryProducts.AutoSize = true;
+            this.lblLightingCategoryProducts.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLightingCategoryProducts.Location = new System.Drawing.Point(65, 58);
+            this.lblLightingCategoryProducts.Name = "lblLightingCategoryProducts";
+            this.lblLightingCategoryProducts.Size = new System.Drawing.Size(20, 24);
+            this.lblLightingCategoryProducts.TabIndex = 3;
+            this.lblLightingCategoryProducts.Text = "0";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(48, 17);
+            this.label26.Location = new System.Drawing.Point(4, 17);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(87, 16);
+            this.label26.Size = new System.Drawing.Size(236, 16);
             this.label26.TabIndex = 2;
-            this.label26.Text = "Sipariş Sayısı";
+            this.label26.Text = "Aydınlatma Kategorisindeki Ürün Sayısı";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.lblCustomerCountLastMonth);
+            this.panel14.Controls.Add(this.lblProductWithMostStock);
             this.panel14.Controls.Add(this.label28);
             this.panel14.Location = new System.Drawing.Point(424, 330);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(200, 100);
             this.panel14.TabIndex = 11;
             // 
-            // lblCustomerCountLastMonth
+            // lblProductWithMostStock
             // 
-            this.lblCustomerCountLastMonth.AutoSize = true;
-            this.lblCustomerCountLastMonth.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCustomerCountLastMonth.Location = new System.Drawing.Point(65, 58);
-            this.lblCustomerCountLastMonth.Name = "lblCustomerCountLastMonth";
-            this.lblCustomerCountLastMonth.Size = new System.Drawing.Size(20, 24);
-            this.lblCustomerCountLastMonth.TabIndex = 3;
-            this.lblCustomerCountLastMonth.Text = "0";
-//            this.lblCustomerCountLastMonth.Click += new System.EventHandler(this.label27_Click);
+            this.lblProductWithMostStock.AutoSize = true;
+            this.lblProductWithMostStock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProductWithMostStock.Location = new System.Drawing.Point(0, 58);
+            this.lblProductWithMostStock.Name = "lblProductWithMostStock";
+            this.lblProductWithMostStock.Size = new System.Drawing.Size(20, 24);
+            this.lblProductWithMostStock.TabIndex = 3;
+            this.lblProductWithMostStock.Text = "0";
             // 
             // label28
             // 
@@ -522,9 +504,9 @@
             this.label28.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label28.Location = new System.Drawing.Point(48, 17);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(90, 16);
+            this.label28.Size = new System.Drawing.Size(120, 16);
             this.label28.TabIndex = 2;
-            this.label28.Text = "Müşteri Sayısı";
+            this.label28.Text = "Stoğu Yüksek Ürün";
             // 
             // panel15
             // 
@@ -535,7 +517,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(200, 100);
             this.panel15.TabIndex = 12;
-//            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
             // lblActiveCityCount
             // 
@@ -570,7 +551,7 @@
             // 
             this.lblTopCustomer.AutoSize = true;
             this.lblTopCustomer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTopCustomer.Location = new System.Drawing.Point(65, 58);
+            this.lblTopCustomer.Location = new System.Drawing.Point(74, 58);
             this.lblTopCustomer.Name = "lblTopCustomer";
             this.lblTopCustomer.Size = new System.Drawing.Size(20, 24);
             this.lblTopCustomer.TabIndex = 3;
@@ -586,133 +567,11 @@
             this.label32.TabIndex = 2;
             this.label32.Text = "En Çok Sipariş Veren Müşteri";
             // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.lblCompletedOrderCount);
-            this.panel17.Controls.Add(this.label34);
-            this.panel17.Location = new System.Drawing.Point(630, 436);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(200, 100);
-            this.panel17.TabIndex = 14;
-            // 
-            // lblCompletedOrderCount
-            // 
-            this.lblCompletedOrderCount.AutoSize = true;
-            this.lblCompletedOrderCount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCompletedOrderCount.Location = new System.Drawing.Point(65, 58);
-            this.lblCompletedOrderCount.Name = "lblCompletedOrderCount";
-            this.lblCompletedOrderCount.Size = new System.Drawing.Size(20, 24);
-            this.lblCompletedOrderCount.TabIndex = 3;
-            this.lblCompletedOrderCount.Text = "0";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label34.Location = new System.Drawing.Point(48, 17);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(87, 16);
-            this.label34.TabIndex = 2;
-            this.label34.Text = "Sipariş Sayısı";
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel18.Controls.Add(this.lblActiveCustomerCount);
-            this.panel18.Controls.Add(this.label36);
-            this.panel18.Location = new System.Drawing.Point(424, 436);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(200, 100);
-            this.panel18.TabIndex = 15;
-            // 
-            // lblActiveCustomerCount
-            // 
-            this.lblActiveCustomerCount.AutoSize = true;
-            this.lblActiveCustomerCount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblActiveCustomerCount.Location = new System.Drawing.Point(65, 58);
-            this.lblActiveCustomerCount.Name = "lblActiveCustomerCount";
-            this.lblActiveCustomerCount.Size = new System.Drawing.Size(20, 24);
-            this.lblActiveCustomerCount.TabIndex = 3;
-            this.lblActiveCustomerCount.Text = "0";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label36.Location = new System.Drawing.Point(48, 17);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(90, 16);
-            this.label36.TabIndex = 2;
-            this.label36.Text = "Müşteri Sayısı";
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.lblTotalProductStock);
-            this.panel19.Controls.Add(this.label38);
-            this.panel19.Location = new System.Drawing.Point(218, 436);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(200, 100);
-            this.panel19.TabIndex = 16;
-            // 
-            // lblTotalProductStock
-            // 
-            this.lblTotalProductStock.AutoSize = true;
-            this.lblTotalProductStock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTotalProductStock.Location = new System.Drawing.Point(65, 58);
-            this.lblTotalProductStock.Name = "lblTotalProductStock";
-            this.lblTotalProductStock.Size = new System.Drawing.Size(20, 24);
-            this.lblTotalProductStock.TabIndex = 3;
-            this.lblTotalProductStock.Text = "0";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label38.Location = new System.Drawing.Point(48, 17);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(74, 16);
-            this.label38.TabIndex = 2;
-            this.label38.Text = "Ürün Sayısı";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel20.Controls.Add(this.lblTotalSalesQuantity);
-            this.panel20.Controls.Add(this.label40);
-            this.panel20.Location = new System.Drawing.Point(12, 436);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(200, 100);
-            this.panel20.TabIndex = 13;
-            // 
-            // lblTotalSalesQuantity
-            // 
-            this.lblTotalSalesQuantity.AutoSize = true;
-            this.lblTotalSalesQuantity.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTotalSalesQuantity.Location = new System.Drawing.Point(65, 58);
-            this.lblTotalSalesQuantity.Name = "lblTotalSalesQuantity";
-            this.lblTotalSalesQuantity.Size = new System.Drawing.Size(20, 24);
-            this.lblTotalSalesQuantity.TabIndex = 3;
-            this.lblTotalSalesQuantity.Text = "0";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label40.Location = new System.Drawing.Point(48, 17);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(82, 16);
-            this.label40.TabIndex = 2;
-            this.label40.Text = "Toplam Satış";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 550);
-            this.Controls.Add(this.panel17);
-            this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel20);
+            this.ClientSize = new System.Drawing.Size(844, 447);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel14);
@@ -765,14 +624,6 @@
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -801,7 +652,7 @@
         private System.Windows.Forms.Label lblAvgOrderPrice;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label lblTotalRevenue;
+        private System.Windows.Forms.Label lblTotalStock;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label lblCategoryWithMostProducts;
@@ -816,10 +667,10 @@
         private System.Windows.Forms.Label lblMostExpensiveProduct;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label lblOrderCountLastMonth;
+        private System.Windows.Forms.Label lblLightingCategoryProducts;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label lblCustomerCountLastMonth;
+        private System.Windows.Forms.Label lblProductWithMostStock;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label lblActiveCityCount;
@@ -827,18 +678,6 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label lblTopCustomer;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label lblCompletedOrderCount;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label lblActiveCustomerCount;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label lblTotalProductStock;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label lblTotalSalesQuantity;
-        private System.Windows.Forms.Label label40;
     }
 }
 
