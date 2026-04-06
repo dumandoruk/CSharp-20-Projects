@@ -15,7 +15,8 @@
   * **Advanced DB Design:** Self-referencing (Recursive) category structure.
   * **LINQ Mastery:** Complex queries for financial and inventory statistics.
 * **Preview:**
-![Dashboard Preview](https://github.com/user-attachments/assets/6d392372-22b1-4722-b321-232853dc7575)
+![Dashboard Preview](<img width="793" height="493" alt="image" src="https://github.com/user-attachments/assets/4b23c73c-077a-4047-9b00-de531d7cb6a1" />
+)
 
 *(The list will be updated as I progress with new projects.)*
 
