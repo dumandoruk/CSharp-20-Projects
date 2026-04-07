@@ -20,14 +20,14 @@
 ### Project 4 : EF Code First Movies App
 * **Focus:** Advanced ORM with Code First Approach & Relational Mapping.
 * * **Key Features:**
-  * **Dynamic Relational Listing:** Displaying movies with their category names using LINQ Select and Navigation Properties.
-  * **Automated Database Schema:** Automatic table generation and versioning using EF Migrations.
-  * **Smart UI Components:** Using ComboBox for dynamic category selection and DateTimePicker for error-free date entry.
-  * **Data Integrity:** Implementing 1-to-Many relationships between Movies and Categories at the code level.
+   * **Dynamic Relational Listing:** Displaying movies with their category names using LINQ Select and Navigation Properties.
+   * **Automated Database Schema:** Automatic table generation and versioning using EF Migrations.
+   * **Smart UI Components:** Using ComboBox for dynamic category selection and DateTimePicker for error-free date entry.
+   * **Data Integrity:** Implementing 1-to-Many relationships between Movies and Categories at the code level.
 * * **Reliability & Clean Code:**
-  * **Fail-Fast Validation:** Pre-check logic to ensure a record is selected before Update/Delete operations.
-  * **Resource Management:** Using using blocks to ensure efficient database connection handling and memory cleanup.
-  * **Type Safety:** Proper data casting and TryParse implementations for robust user input handling.
+   * **Fail-Fast Validation:** Pre-check logic to ensure a record is selected before Update/Delete operations.
+   * **Resource Management:** Using using blocks to ensure efficient database connection handling and memory cleanup.
+   * **Type Safety:** Proper data casting and TryParse implementations for robust user input handling.
 * **Tech Stack:** C#, Entity Framework 6.x, MS SQL Server, Windows Forms.
 * **Preview:**
   <img width="1016" height="562" alt="Screenshot 2026-04-07 121206" src="https://github.com/user-attachments/assets/cccf159c-1fee-4420-b4e5-5b29cdea88e7" />
