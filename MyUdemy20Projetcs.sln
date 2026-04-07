@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.4.11620.152 stable
+VisualStudioVersion = 18.4.11620.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1_AdonetCustomer", "Project1_AdonetCustomer\Project1_AdonetCustomer.csproj", "{257F5A45-0232-41B9-8BF3-AEE7C05A05B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project2_EfDbFirstProduct", "Project2_EfDbFirstProduct\Project2_EfDbFirstProduct.csproj", "{1761C8E3-C298-4DC1-849F-68FA50671E90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project3_EfStatistics", "Project3_EfStatistics\Project3_EfStatistics.csproj", "{E2E56FB2-8A42-4245-B607-D23F63D769C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4_EfCodeFirstMovie", "Project4_EfCodeFirstMovie\Project4_EfCodeFirstMovie.csproj", "{63CA243F-DB98-49F4-96AD-E16A710A358E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E2E56FB2-8A42-4245-B607-D23F63D769C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2E56FB2-8A42-4245-B607-D23F63D769C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2E56FB2-8A42-4245-B607-D23F63D769C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CA243F-DB98-49F4-96AD-E16A710A358E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CA243F-DB98-49F4-96AD-E16A710A358E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CA243F-DB98-49F4-96AD-E16A710A358E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CA243F-DB98-49F4-96AD-E16A710A358E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
