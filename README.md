@@ -32,7 +32,19 @@
 * **Preview:**
   <img width="1016" height="562" alt="Screenshot 2026-04-07 121206" src="https://github.com/user-attachments/assets/cccf159c-1fee-4420-b4e5-5b29cdea88e7" />
   <img width="555" height="431" alt="image" src="https://github.com/user-attachments/assets/07bf457b-e8b6-4455-9a7f-9ac0eb94ff1b" />
-
+### Project 5 : Completed Product Management with Dapper
+* **Focus:** High-performance database operations and Asynchronous Repository Pattern.
+* * **Key Features:**
+  * **Asynchronous Execution:** All database operations (CRUD) are implemented using async/await to ensure a 100% responsive UI.
+  * **Micro-ORM Efficiency:** Leveraged Dapper for near-native SQL execution speed, replacing heavy ORM overhead.
+  * **Relational Mapping (Dapper Style):** Manually crafted INNER JOIN queries to fetch and map relational data (Products with Categories) into DTOs.
+  * **Dynamic Dashboard:** Integrated a statistics panel using ExecuteScalarAsync to provide real-time business insights (Total Count, Avg Price, etc.).
+  * **Smart Data Binding:** Dynamically populating ComboBox with DisplayMember and ValueMember mapping for professional data entry.
+ * * **Reliability & Security:**
+   * **SQL Injection Protection:** Used DynamicParameters to sanitize and secure all user-driven SQL queries.
+   * **Clean Resource Management:**Implemented using blocks for every SqlConnection to prevent memory leaks and connection pool exhaustion.
+   * **Layered DTO Pattern:** Specialized Data Transfer Objects (DTOs) used for Result, Create, and Update operations to ensure data isolation.
+ * * **Tech Stack:** C#, Dapper Micro-ORM, MS SQL Server (Northwind), Asynchronous Programming, Windows Forms.
 
 
 *(The list will be updated as I progress with new projects.)*
