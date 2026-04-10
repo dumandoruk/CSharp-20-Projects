@@ -45,25 +45,26 @@
    * **Clean Resource Management:**Implemented using blocks for every SqlConnection to prevent memory leaks and connection pool exhaustion.
    * **Layered DTO Pattern:** Specialized Data Transfer Objects (DTOs) used for Result, Create, and Update operations to ensure data isolation.
  * * **Tech Stack:** C#, Dapper Micro-ORM, MS SQL Server (Northwind), Asynchronous Programming, Windows Forms.
- * **Preview:** <table border="0">
+ * **Preview:** 
+<table border="0">
   <tr>
-    <b>Dapper Statistic Dashboard</b>
     <td align="center">
-      <img width="500" height="300" alt="Screenshot 2026-04-10 121826" src="https://github.com/user-attachments/assets/fb55977d-d816-4b1c-8e31-a945eb485a8b" />
+      <img src="https://github.com/user-attachments/assets/a0b23a90-0237-462a-8aeb-26e0a59470e6" alt="Statistics Dashboard Screen" width="500" height="300" />
       <br />
+      <b>Dapper Statistic Dashboard</b>
     </td>
-    <b>Product Panel (CRUD)</b>
     <td align="center">
-      <img width="500" height="300" alt="Screenshot 2026-04-10 121840" src="https://github.com/user-attachments/assets/a0b23a90-0237-462a-8aeb-26e0a59470e6" />
+      <img src="https://github.com/user-attachments/assets/fb55977d-d816-4b1c-8e31-a945eb485a8b" alt="Product Management Screen" width="500" height="300" />
       <br />
+      <b>Product Paneli (CRUD)</b>
     </td>
-    <b>Dapper İstatistik Dashboard</b>
    <td align="center">
-      <img width="500" height="300" alt="Screenshot 2026-04-10 121903" src="https://github.com/user-attachments/assets/316c48ef-fb86-4426-a2bd-0b078c99f261" />
-   </td>
+      <img src="https://github.com/user-attachments/assets/316c48ef-fb86-4426-a2bd-0b078c99f261" alt="Category Management Screen" width="500" height="300" />
+      <br />
+      <b>Category Paneli (CRUD)</b>
+    </td>
   </tr>
 </table>
-
 
 
 
