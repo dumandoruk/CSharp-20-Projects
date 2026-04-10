@@ -14,9 +14,9 @@ using System.Windows.Forms.VisualStyles;
 
 namespace Project5_DapperNorthwind
 {
-    public partial class Form1 : Form
+    public partial class Categories : Form
     {
-        public Form1()
+        public Categories()
         {
             InitializeComponent();
         }
@@ -66,6 +66,11 @@ namespace Project5_DapperNorthwind
             parameters.Add("@P2", txtDescription.Text);
             parameters.Add("@CategoryId", txtId.Text);
             await connection.ExecuteAsync(query, parameters);
+        }
+
+        private void Categories_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
