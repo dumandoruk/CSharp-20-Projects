@@ -35,12 +35,12 @@
     <td align="center">
       <img src="https://github.com/user-attachments/assets/cccf159c-1fee-4420-b4e5-5b29cdea88e7" alt="Product Management Screen" width="500" height="300" />
       <br />
-      <b>Category Managment Panel (CRUD)</b>
+      <b>Category Management Panel (CRUD)</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/07bf457b-e8b6-4455-9a7f-9ac0eb94ff1b" alt="Category Managment Screen" width="500" height="300" />
+      <img src="https://github.com/user-attachments/assets/07bf457b-e8b6-4455-9a7f-9ac0eb94ff1b" alt="Category Management Screen" width="500" height="300" />
       <br />
-      <b>Category Managment Panel (CRUD)</b>
+      <b>Category Management Panel (CRUD)</b>
     </td>
   </tr>
 </table>
