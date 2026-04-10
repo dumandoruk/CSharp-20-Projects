@@ -49,12 +49,12 @@
 <table border="0">
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/a0b23a90-0237-462a-8aeb-26e0a59470e6" alt="Statistics Dashboard Screen" width="500" height="300" />
+      <img src="https://github.com/user-attachments/assets/fb55977d-d816-4b1c-8e31-a945eb485a8b" alt="Statistics Dashboard Screen" width="500" height="300" />
       <br />
       <b>Dapper Statistic Dashboard</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/fb55977d-d816-4b1c-8e31-a945eb485a8b" alt="Product Management Screen" width="500" height="300" />
+      <img src="https://github.com/user-attachments/assets/a0b23a90-0237-462a-8aeb-26e0a59470e6" alt="Product Management Screen" width="500" height="300" />
       <br />
       <b>Product Paneli (CRUD)</b>
     </td>
