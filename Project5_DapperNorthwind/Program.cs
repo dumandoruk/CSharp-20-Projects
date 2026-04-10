@@ -16,7 +16,7 @@ namespace Project5_DapperNorthwind
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Products());
+            Application.Run(new FrmStatistics());
         }
     }
 }

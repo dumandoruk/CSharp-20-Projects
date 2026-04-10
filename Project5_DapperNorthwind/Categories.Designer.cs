@@ -40,6 +40,8 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.btnOpenStatistics = new System.Windows.Forms.Button();
+            this.btnOpenProducts = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +67,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(542, 63);
+            this.button2.Location = new System.Drawing.Point(423, 63);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 34);
             this.button2.TabIndex = 2;
@@ -108,7 +110,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(542, 23);
+            this.button3.Location = new System.Drawing.Point(423, 23);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 34);
             this.button3.TabIndex = 7;
@@ -134,7 +136,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(542, 103);
+            this.button4.Location = new System.Drawing.Point(423, 103);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(155, 34);
             this.button4.TabIndex = 10;
@@ -144,7 +146,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(542, 143);
+            this.button5.Location = new System.Drawing.Point(423, 143);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(155, 34);
             this.button5.TabIndex = 11;
@@ -152,11 +154,33 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // btnOpenStatistics
+            // 
+            this.btnOpenStatistics.Location = new System.Drawing.Point(609, 23);
+            this.btnOpenStatistics.Name = "btnOpenStatistics";
+            this.btnOpenStatistics.Size = new System.Drawing.Size(98, 34);
+            this.btnOpenStatistics.TabIndex = 12;
+            this.btnOpenStatistics.Text = "Statistics";
+            this.btnOpenStatistics.UseVisualStyleBackColor = true;
+            this.btnOpenStatistics.Click += new System.EventHandler(this.btnOpenStatistics_Click);
+            // 
+            // btnOpenProducts
+            // 
+            this.btnOpenProducts.Location = new System.Drawing.Point(609, 67);
+            this.btnOpenProducts.Name = "btnOpenProducts";
+            this.btnOpenProducts.Size = new System.Drawing.Size(98, 34);
+            this.btnOpenProducts.TabIndex = 13;
+            this.btnOpenProducts.Text = "Products";
+            this.btnOpenProducts.UseVisualStyleBackColor = true;
+            this.btnOpenProducts.Click += new System.EventHandler(this.btnOpenProducts_Click);
+            // 
             // Categories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 541);
+            this.Controls.Add(this.btnOpenProducts);
+            this.Controls.Add(this.btnOpenStatistics);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
@@ -191,6 +215,8 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnOpenStatistics;
+        private System.Windows.Forms.Button btnOpenProducts;
     }
 }
 

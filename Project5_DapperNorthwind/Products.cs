@@ -121,5 +121,17 @@ namespace Project5_DapperNorthwind
                 await ProductList();
             }
         }
+
+        private void btnOpenStatistics_Click(object sender, EventArgs e)
+        {
+            FrmStatistics frm = new FrmStatistics();
+            frm.Show();
+        }
+
+        private void btnOpenCategories_Click(object sender, EventArgs e)
+        {
+            Categories frm = new Categories();
+            frm.Show();
+        }
     }
 }

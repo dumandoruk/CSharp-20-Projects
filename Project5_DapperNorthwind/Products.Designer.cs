@@ -43,6 +43,8 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnOpenStatistics = new System.Windows.Forms.Button();
+            this.btnOpenCategories = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,11 +180,33 @@
             this.comboBox1.Size = new System.Drawing.Size(138, 24);
             this.comboBox1.TabIndex = 15;
             // 
+            // btnOpenStatistics
+            // 
+            this.btnOpenStatistics.Location = new System.Drawing.Point(826, 27);
+            this.btnOpenStatistics.Name = "btnOpenStatistics";
+            this.btnOpenStatistics.Size = new System.Drawing.Size(99, 32);
+            this.btnOpenStatistics.TabIndex = 16;
+            this.btnOpenStatistics.Text = "Statistics";
+            this.btnOpenStatistics.UseVisualStyleBackColor = true;
+            this.btnOpenStatistics.Click += new System.EventHandler(this.btnOpenStatistics_Click);
+            // 
+            // btnOpenCategories
+            // 
+            this.btnOpenCategories.Location = new System.Drawing.Point(826, 65);
+            this.btnOpenCategories.Name = "btnOpenCategories";
+            this.btnOpenCategories.Size = new System.Drawing.Size(99, 32);
+            this.btnOpenCategories.TabIndex = 17;
+            this.btnOpenCategories.Text = "Categories";
+            this.btnOpenCategories.UseVisualStyleBackColor = true;
+            this.btnOpenCategories.Click += new System.EventHandler(this.btnOpenCategories_Click);
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 524);
+            this.Controls.Add(this.btnOpenCategories);
+            this.Controls.Add(this.btnOpenStatistics);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnRemove);
@@ -224,5 +248,7 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnOpenStatistics;
+        private System.Windows.Forms.Button btnOpenCategories;
     }
 }

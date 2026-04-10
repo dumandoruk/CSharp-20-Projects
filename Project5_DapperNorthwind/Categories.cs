@@ -72,5 +72,17 @@ namespace Project5_DapperNorthwind
         {
 
         }
+
+        private void btnOpenStatistics_Click(object sender, EventArgs e)
+        {
+            FrmStatistics frm = new FrmStatistics();
+            frm.Show();
+        }
+
+        private void btnOpenProducts_Click(object sender, EventArgs e)
+        {
+            Products frm = new Products();
+            frm.Show();
+        }
     }
 }
