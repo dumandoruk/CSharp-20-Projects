@@ -45,8 +45,7 @@
    * **Clean Resource Management:**Implemented using blocks for every SqlConnection to prevent memory leaks and connection pool exhaustion.
    * **Layered DTO Pattern:** Specialized Data Transfer Objects (DTOs) used for Result, Create, and Update operations to ensure data isolation.
  * * **Tech Stack:** C#, Dapper Micro-ORM, MS SQL Server (Northwind), Asynchronous Programming, Windows Forms.
- * **Preview:** 
-<table border="0">
+ * **Preview:** <table border="0">
   <tr>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/fb55977d-d816-4b1c-8e31-a945eb485a8b" alt="Statistics Dashboard Screen" width="500" height="300" />
@@ -56,12 +55,12 @@
     <td align="center">
       <img src="https://github.com/user-attachments/assets/a0b23a90-0237-462a-8aeb-26e0a59470e6" alt="Product Management Screen" width="500" height="300" />
       <br />
-      <b>Product Paneli (CRUD)</b>
+      <b>Product Panel (CRUD)</b>
     </td>
    <td align="center">
       <img src="https://github.com/user-attachments/assets/316c48ef-fb86-4426-a2bd-0b078c99f261" alt="Category Management Screen" width="500" height="300" />
       <br />
-      <b>Category Paneli (CRUD)</b>
+      <b>Category Panel (CRUD)</b>
     </td>
   </tr>
 </table>
