@@ -15,7 +15,7 @@
   * **Advanced DB Design:** Self-referencing (Recursive) category structure.
   * **LINQ Mastery:** Complex queries for financial and inventory statistics.
 * **Preview:**
-<img width="793" height="493" alt="image" src="https://github.com/user-attachments/assets/c8ce1904-1a57-4b60-b176-7a03ca8babee" />
+<img width="500" height="300" alt="Statistic Dashboard" src="https://github.com/user-attachments/assets/c8ce1904-1a57-4b60-b176-7a03ca8babee" />
 
 ### Project 4 : EF Code First Movies App
 * **Focus:** Advanced ORM with Code First Approach & Relational Mapping.
@@ -35,12 +35,12 @@
     <td align="center">
       <img src="https://github.com/user-attachments/assets/cccf159c-1fee-4420-b4e5-5b29cdea88e7" alt="Product Management Screen" width="500" height="300" />
       <br />
-      <b>Ürün Yönetim Paneli (CRUD)</b>
+      <b>Category Managment Panel (CRUD)</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/07bf457b-e8b6-4455-9a7f-9ac0eb94ff1b" alt="Statistics Dashboard Screen" width="500" height="300" />
+      <img src="https://github.com/user-attachments/assets/07bf457b-e8b6-4455-9a7f-9ac0eb94ff1b" alt="Category Managment Screen" width="500" height="300" />
       <br />
-      <b>Dapper İstatistik Dashboard</b>
+      <b>Category Managment Panel (CRUD)</b>
     </td>
   </tr>
 </table>
