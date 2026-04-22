@@ -1,9 +1,12 @@
 
+using Project6_API.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer(); // Bunu ekle
 builder.Services.AddSwaggerGen();           // Swagger jeneratörünü ekle
+builder.Services.AddDbContext<CurrencyContext>();
 
 var app = builder.Build();
 
