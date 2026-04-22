@@ -11,7 +11,7 @@
 ### Project 3: EF Statistics Dashboard
 * **Focus:** Data analysis and Business Intelligence (BI) visualization.
 * **Features:**
-  * Real-time e-commerce metrics dashboard.
+  * **Real-time e-commerce metrics dashboard.**
   * **Advanced DB Design:** Self-referencing (Recursive) category structure.
   * **LINQ Mastery:** Complex queries for financial and inventory statistics.
 * **Preview:**
@@ -80,7 +80,7 @@
 </table>
 
 ### Project 6: Currency & Exchange Rate Web API
-* **Focus:** * Developing a Scalable RESTful API for Financial Data Management.
+* **Focus:** Developing a Scalable RESTful API for Financial Data Management.
 * **Key Features:**
   * **Professional CRUD Operations:** Full implementation of Create, Read, Update, and Delete endpoints for currency management.
   * **Statistical Endpoints:** Specialized API methods utilizing LINQ to provide real-time business metrics such as Total Currency Count and the Highest Exchange Rate.
