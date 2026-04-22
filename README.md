@@ -79,7 +79,34 @@
   </tr>
 </table>
 
-
+### Project 6: Currency & Exchange Rate Web API
+* **Focus:** * Developing a Scalable RESTful API for Financial Data Management.
+* **Key Features:** *
+  * **Professional CRUD Operations:** * Full implementation of Create, Read, Update, and Delete endpoints for currency management.
+  * **Statistical Endpoints:** * Specialized API methods utilizing LINQ to provide real-time business metrics such as Total Currency Count and the Highest Exchange Rate.
+  * **Modern Architecture (Dependency Injection):** * Leveraged Constructor Injection to decouple the Controller from the Database Context, ensuring a maintainable and testable codebase.
+  * **Universal Data Output:** * Returns standardized JSON responses, making the API compatible with diverse clients such as WinForms, Mobile Apps, and Web Frontend frameworks.
+  * **Precise Financial Handling:** * Utilized decimal data types for exchange rates to prevent rounding errors and ensure financial accuracy.
+* **Reliability & Security:** *
+  * **Entity Framework Core Integration:** * Managed database interactions with a secure, modern ORM layer including Migration-based schema management.
+  * **Defensive Programming:** * Implemented null-check validations and specific HTTP Status Codes (NotFound, Ok, BadRequest) for robust error handling.
+  * **Interactive API Documentation:** * Integrated Swagger (OpenAPI) for real-time testing and seamless developer collaboration.
+* **Tech Stack:** * C#, ASP.NET Core Web API, Entity Framework Core, MS SQL Server, LINQ, Swagger.
+* **Preview:** *
+*<table border="0">
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/3b82beeb-a022-4562-a43f-06f6bf0b2168" alt="Swagger UI API Testing" width="500" height="300" />
+<br />
+<b>Swagger API Interface</b>
+</td>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/f8f6b680-c079-4c99-9cd1-9fa3f4bb44f9" alt="JSON Data Output" width="500" height="300" />
+<br />
+<b>JSON Data Response</b>
+</td>
+</tr>
+</table>
 
 *(The list will be updated as I progress with new projects.)*
 
