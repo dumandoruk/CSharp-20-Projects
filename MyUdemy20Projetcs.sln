@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4_EfCodeFirstMovie",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5_DapperNorthwind", "Project5_DapperNorthwind\Project5_DapperNorthwind.csproj", "{DFFB5DB8-6C35-4FC8-95DE-92356F5D8FEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project6_API", "Project6_API\Project6_API.csproj", "{BC8531A9-FD28-4EAA-8115-B2E83E29107F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DFFB5DB8-6C35-4FC8-95DE-92356F5D8FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFFB5DB8-6C35-4FC8-95DE-92356F5D8FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFFB5DB8-6C35-4FC8-95DE-92356F5D8FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8531A9-FD28-4EAA-8115-B2E83E29107F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8531A9-FD28-4EAA-8115-B2E83E29107F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8531A9-FD28-4EAA-8115-B2E83E29107F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8531A9-FD28-4EAA-8115-B2E83E29107F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
