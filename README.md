@@ -55,7 +55,7 @@
   * **Smart Data Binding:** Dynamically populating ComboBox with DisplayMember and ValueMember mapping for professional data entry.
 * **Reliability & Security:**
    * **SQL Injection Protection:** Used DynamicParameters to sanitize and secure all user-driven SQL queries.
-   * **Clean Resource Management:**Implemented using blocks for every SqlConnection to prevent memory leaks and connection pool exhaustion.
+   * **Clean Resource Management:** Implemented using blocks for every SqlConnection to prevent memory leaks and connection pool exhaustion.
    * **Layered DTO Pattern:** Specialized Data Transfer Objects (DTOs) used for Result, Create, and Update operations to ensure data isolation.
 * **Tech Stack:** C#, Dapper Micro-ORM, MS SQL Server (Northwind), Asynchronous Programming, Windows Forms.
 * **Preview:**
