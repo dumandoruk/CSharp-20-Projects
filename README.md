@@ -4,7 +4,7 @@
 
 ### Project 2: Entity Framework (DbFirst) Product Management
 * **Focus:** Introduction to ORM with Entity Framework.
-* **Features:** * Dynamic listing and product management.
+* **Features:** Dynamic listing and product management.
   * **Advanced UI:** Delete products directly from DataGridView selection.
   * **Reliability:** Integrated `try-catch` blocks for error handling.
 
