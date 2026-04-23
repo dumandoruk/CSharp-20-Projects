@@ -126,7 +126,6 @@
 <tr>
 <td align="center">
 <img src="https://github.com/user-attachments/assets/df621846-7f45-4163-950a-49f3351fe5e3" alt="Consume API Interface" width="500" height="300" />
-" alt="Consume API Testing" width="500" height="300" />
 <br />
 <b>API Consume Console Interface</b>
 </td>
