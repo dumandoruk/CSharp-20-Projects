@@ -32,7 +32,7 @@ namespace Project6_API.Controllers
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteCurrency(int id)
         {
             var value= _currencyContext.Currencies.Find(id);
@@ -64,7 +64,7 @@ namespace Project6_API.Controllers
             return Ok();
         }
 
-        [HttpGet("GetByIdCurrency")]
+        [HttpGet("{id}")]
         public IActionResult GetByIdCurrency(int id)
         {
             var value = _currencyContext.Currencies.Find(id);
