@@ -108,19 +108,34 @@
 </tr>
 </table>
 
+### Project 7: Currency & Exchange Rate API Consumer (Console)
+* **Focus:** Consuming RESTful Web Services and Managing API Interactions.
+* **Key Features:**
+  * **Advanced HttpClient Integration:** Orchestrated communication between the Console application and Web API using HttpClient for seamless data exchange.
+  * **Asynchronous Flow (async/await):** Fully non-blocking I/O operations, ensuring a 100% responsive data processing cycle.
+  * **Strongly-Typed DTO Pattern:** Implemented dedicated Data Transfer Objects (ResultCurrencyDto, CreateCurrencyDto, UpdateCurrencyDto) to ensure type safety and eliminate runtime errors during JSON deserialization.
+  * **Comprehensive CRUD Interface:** Developed a dynamic menu system enabling real-time Currency Listing, Insertion, Deletion, and Update operations.
+  * **Robust JSON Handling:** Leveraged Newtonsoft.Json for high-performance serialization and deserialization of complex JSON objects.
+* **Reliability & Security:**
+  * **Centralized Client Management:** Optimized resource usage by managing a single HttpClient instance across the application lifecycle.
+  * **Dynamic Routing:** Implemented path-based routing for specific operations (DELETE/GET by ID) to align with REST architecture standards.
+  * **Input Sanitation:** Integrated character handling (e.g., .ToUpper()) to maintain database integrity across all currencies.
+* **Tech Stack:** C#, .NET Console App, Web API Consumption, Newtonsoft.Json, REST Architecture.
+* **Preview:**
+*<table border="0">
+<tr>
+<td align="center">
+<img src="<img width="612" height="675" alt="image" src="https://github.com/user-attachments/assets/df621846-7f45-4163-950a-49f3351fe5e3" />
+" alt="Consume API Testing" width="500" height="300" />
+<br />
+<b>API Consume Console Interface</b>
+</td>
+</tr>
+</table>
+
 *(The list will be updated as I progress with new projects.)*
 
----
-
-## Technologies Used
-- C#
-- .NET Framework / .NET Core
-- Windows Forms
-- ADO.NET
-- Entity Framework
-
----
-
+--
 ## About
 This repository demonstrates my learning journey in C#.  
 Each project starts with a basic version (from the course) and then I add new improvements, optimizations, and error handling before publishing it here.
