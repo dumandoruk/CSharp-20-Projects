@@ -150,7 +150,7 @@
 <td align="center">
 <img src="https://github.com/user-attachments/assets/9baee14e-e45d-46ca-84a8-21beff869987" alt="Currency Converter" width="500" height="300" />
 <br />
-<b>API Consume Console Interface</b>
+<b>Currency Converter WinForm Interface</b>
 </td>
 </tr>
 </table>
