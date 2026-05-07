@@ -132,6 +132,30 @@
 </tr>
 </table>
 
+### Project 8: Real-Time Currency Converter via RapidAPI
+* **Focus:** Consuming Third-Party External APIs and Implementing Business Logic for Financial Operations.
+* **Key Features:**
+  * **Global Data Integration:** Established a secure connection to the `currency-converter5` service via **RapidAPI** to fetch live foreign exchange rates (USD, EUR, GBP) against TRY.
+  * **Asynchronous Multi-Request Management:** Engineered an `async/await` workflow to handle multiple API requests during `Form_Load`. 
+  * **Rate Limiting & Optimization:** Implemented strategic `Task.Delay` intervals to comply with API quotas (429 Too Many Requests prevention) and ensure application stability.
+  * **Advanced JSON Parsing:** Utilized **Newtonsoft.Json (JObject)** to navigate complex, nested JSON structures and extract specific numerical values.
+  * **Dynamic Calculation Logic:** Developed a functional UI where users can input amounts and perform real-time conversions based on live market data.
+* **Technical Implementation & Reliability:**
+  * **Global Culture Awareness:** Used `CultureInfo.InvariantCulture` for decimal parsing to prevent regional formatting errors (Dot vs. Comma issues).
+  * **Resource Management:** Managed `HttpClient` lifecycle effectively within the Windows Forms environment.
+  * **Type-Safe Arithmetic:** Converted raw string data from API responses into `decimal` types for high-precision financial calculations.
+* **Tech Stack:** C#, .NET WinForms, RapidAPI, Newtonsoft.Json, RESTful Architecture, Async Programming.
+*<table border="0">
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/9baee14e-e45d-46ca-84a8-21beff869987" alt="Currency Converter" width="500" height="300" />
+<br />
+<b>API Consume Console Interface</b>
+</td>
+</tr>
+</table>
+
+
 *(The list will be updated as I progress with new projects.)*
 
 --
