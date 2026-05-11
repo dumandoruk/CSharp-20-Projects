@@ -63,5 +63,24 @@ namespace Project9_MongoDb
             }
 
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var updatedOrder = new Order
+            {
+                Id = txtOrderId.Text,
+                OrderID = txtOrderId.Text,
+                CustomerName = txtCustomerName.Text,
+                City = txtCity.Text,
+                District = TxtDistrict.Text,
+                TotalPrice = decimal.Parse(txtTotalPrice.Text)
+            };
+
+            orderOperation.UpdateOrder(updatedOrder);
+
+            MessageBox.Show("Order uptated successfuly!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            btnList_Click(sender, e);
+        }
     }
 }

@@ -46,5 +46,14 @@ namespace Project9_MongoDb.Services
 
             return orderCollection.Find(new BsonDocument()).ToList();
         }
+
+        public void UpdateOrder(Order order)
+        {
+            var connection = new MongoDbConnection();
+            var orderCollection = connection.GetOrdersCollection().Database.GetCollection<Order>("Orders");
+
+            var filter = Builders<Order>.Filter.Eq("_id", new ObjectId(order.Id));
+            orderCollection.ReplaceOne(filter, order);
+        }
     }
 }
