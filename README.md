@@ -155,6 +155,42 @@
 </tr>
 </table>
 
+# Project 9: MongoDB Order Management System (CRUD)
+
+A professional C# .NET Windows Forms application demonstrating modern NoSQL database integration using MongoDB. This project follows **Clean Code** principles and uses **Generic Repository** patterns for data operations.
+
+## Tech Stack
+- **Language:** C#
+- **Framework:** .NET 8.0 / .NET Framework
+- **Database:** MongoDB (NoSQL)
+- **Architecture:** Generic Repository Pattern
+- **Tools:** MongoDB Compass, Docker
+
+## Key Features
+- **Generic Data Mapping:** Automatically maps BSON documents to C# POCO classes.
+- **Asynchronous Operations:** Leverages `async/await` for non-blocking UI.
+- **Advanced Filtering:** Uses `Builders<T>.Filter` for precise data manipulation.
+- **Dynamic UI:** Real-time DataGridView updates after each database action.
+
+## Project Structure
+- `Entities/`: Contains the `Order` class with Bson attributes.
+- `Services/`: Core logic for MongoDB connection and CRUD operations.
+- `Forms/`: UI implementation and event handling.
+
+## Setup
+1. Ensure **MongoDB Server** is running on `localhost:27017`.
+2. Update connection string in `MongoDbConnection.cs` if necessary.
+3. Build and run the solution.
+
+*<table border="0">
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/f27edea0-bd3b-41b8-823b-f5ccd84c984c" alt="MongoDB" width="500" height="300" />
+<br />
+<b>Mongo DB Order System</b>
+</td>
+</tr>
+</table>
 
 *(The list will be updated as I progress with new projects.)*
 
